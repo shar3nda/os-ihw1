@@ -8,15 +8,15 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define BUFSIZE 5000
+#define BUFFER_SIZE 5000
 
 int main() {
-    char str1[BUFSIZE], str2[BUFSIZE], out1[BUFSIZE], out2[BUFSIZE];
+    char str1[BUFFER_SIZE], str2[BUFFER_SIZE], out1[BUFFER_SIZE], out2[BUFFER_SIZE];
     int i, j, len1, len2;
 
-    fgets(str1, BUFSIZE, stdin);
+    fgets(str1, BUFFER_SIZE, stdin);
     len1 = strlen(str1);
-    fgets(str2, BUFSIZE, stdin);
+    fgets(str2, BUFFER_SIZE, stdin);
     len2 = strlen(str2);
     if (str1[len1-1] == '\n') {
         str1[len1-1] = '\0';
